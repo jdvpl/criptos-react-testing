@@ -85,7 +85,7 @@ const Formulario = ({ mensaje, guardarCriptomoneda, guardarMoneda }) => {
 
       <SelectMonedas />
       <SelectCripto />
-      <Boton type="submit" value="Calcular" />
+      <Boton type="submit" value="Calcular" data-testid="btnSubmit" />
     </form>
   );
 };

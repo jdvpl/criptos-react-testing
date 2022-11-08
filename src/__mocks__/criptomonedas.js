@@ -1,3 +1,6 @@
+import {readFileSync} from 'fs';
+import path from 'path';
+export const criptos=JSON.parse(readFileSync(path.join(__dirname,'api.json')).toString());
 export const MONEDAS = [
   { codigo: "USD", nombre: "Dolar de Estados Unidos" },
   { codigo: "COP", nombre: "Peso Colombiano" },

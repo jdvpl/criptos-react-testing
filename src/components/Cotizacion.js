@@ -33,7 +33,7 @@ const Cotizacion = ({resultado,criptomoneda}) => {
     if(Object.keys(resultado).length===0) return null;
 
     return ( 
-        <ResultadoDiv>
+        <ResultadoDiv data-testid="resultadoData">
         <IMG>
             <img src={`https://www.cryptocompare.com${resultado.IMAGEURL}`} alt={resultado.FROMSYMBOL} title={resultado.FROMSYMBOL}/>
 
